@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(64, 9, 116);
+}
+#heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: rgb(224, 184, 224);
+}
+#panel {
+  height: 80%;
+  width: 80%;
+  border-radius: 10px;
+  background-color: rgb(13, 198, 118);
+  overflow: hidden;
+}
+#ptop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  height: 90px;
+  width: 100%;
+  background-color: rgb(200, 202, 163);
+}
+#ptop .elem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.box {
+  height: 45px;
+  width: 45px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 20px;
+}
+#ptop h2 {
+  color: rgb(134, 52, 134);
+  font-size: 26px;
+}
+#pbtm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  height: calc(100% - 90px);
+}
+#pbtm .bubble {
+  height: 50px;
+  width: 50px;
+  background-color: aqua;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 20px;
+}
+.bubble:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+/* #ptop */
