@@ -1,44 +1,41 @@
-# Bubble Game
+# BubbleGum Game
 
-![Bubble Game Screenshot](Bubble-Game.png)
+![BubbleGum Game Screenshot](Bubble-Game.png)
 
-This is a simple JavaScript-based bubble popping game with a timer. The goal of the game is to click on bubbles with the correct number to earn points before the timer runs out.
+BubbleGum Game is a browser-based number matching arcade game. Match the number shown in the `Hit` panel before the timer runs out, build your score, and try to beat your saved high score.
 
-## Table of Contents
+## Live Demo
 
-- [Demo](#demo)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [How to Play](#how-to-play)
-- [Contributing](#contributing)
+Enable GitHub Pages for this repository and use:
 
-## Demo
-
-You can play the game live at [Game Demo](https://jain-rithik.github.io/Bubble-Game/).
+```text
+https://sriram127.github.io/BubbleGum_Game/
+```
 
 ## Features
 
-- Click on bubbles with the correct number to earn points.
-- A timer counts down, and the game ends when the timer reaches 0.
-- Option to play again after the game over.
+- Start screen with difficulty selection
+- Easy, medium, and hard modes
+- Score, timer, target number, and best-score panels
+- High score saved with `localStorage`
+- Sound toggle for the game-over effect
+- Play-again flow
+- Responsive layout for desktop and mobile
 
-## Installation
+## Tech Stack
 
-1. Clone the repository or download the source code.
-2. Open the `index.html` file in your web browser.
+- HTML
+- CSS
+- JavaScript
 
-## Usage
+## Run Locally
 
-Simply open the `index.html` file in your web browser, and the game will start. Click on the bubbles with the correct number to earn points. The game ends when the timer reaches 0.
+Open `index.html` in a browser.
 
-## How to Play
+## How To Play
 
-- Click on bubbles with the number displayed in the "Hit" box to earn points.
-- The timer counts down from the initial value.
-- Try to earn as many points as possible before the timer runs out.
-- When the game ends, you can click the "Play Again" button to start a new game.
-
-## Contributing
-
-Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or create a pull request.
+1. Choose a difficulty.
+2. Press `Start Game`.
+3. Click bubbles that match the number in the `Hit` box.
+4. Each correct match adds 10 points.
+5. Beat your best score before the timer reaches zero.

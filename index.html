@@ -3,30 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bubble Game</title>
+    <title>BubbleGum Game</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="main">
-      <h1 id="heading">Bubble Game</h1>
-      <div id="panel">
-        <div id="ptop">
-          <div class="elem">
-            <h2>Hit</h2>
-            <div id="hitVal" class="box"></div>
-          </div>
-          <div class="elem">
-            <h2>Timer</h2>
-            <div id="timerVal" class="box"></div>
-          </div>
-          <div class="elem">
-            <h2>Score</h2>
-            <div id="scoreVal" class="box"></div>
-          </div>
+    <main class="app-shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Number matching arcade</p>
+          <h1>BubbleGum Game</h1>
         </div>
-        <div id="pbtm"></div>
-      </div>
-    </div>
-    <script src="./scipt.js"></script>
+        <button id="soundToggle" class="ghost-button" type="button">Sound On</button>
+      </section>
+
+      <section class="scoreboard" aria-label="Game status">
+        <article>
+          <span>Hit</span>
+          <strong id="hitVal">-</strong>
+        </article>
+        <article>
+          <span>Time</span>
+          <strong id="timerVal">60</strong>
+        </article>
+        <article>
+          <span>Score</span>
+          <strong id="scoreVal">0</strong>
+        </article>
+        <article>
+          <span>Best</span>
+          <strong id="bestVal">0</strong>
+        </article>
+      </section>
+
+      <section id="panel" aria-live="polite">
+        <div id="gameBoard"></div>
+      </section>
+    </main>
+
+    <audio id="gameOverSound" src="./sfx-defeat3.mp3" preload="auto"></audio>
+    <script src="./script.js"></script>
   </body>
 </html>
